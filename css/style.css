@@ -156,6 +156,7 @@ h3 {
 
 .section__title--intro {
     font-weight: var(--fw-reg);
+    margin: 0.1em;
 }
 
 .section__title--intro strong {
@@ -301,9 +302,9 @@ header {
 .intro__img {
     box-shadow: var(--bs);
     object-fit: cover;
-    width: 300;
+    /*width: 300;
     height: 300px;
-    overflow: hidden;
+    overflow: hidden;*/
 }
 
 /* top skills section */
