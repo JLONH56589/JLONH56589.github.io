@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Justin Lonh</title>
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<script src="https://kit.fontawesome.com/53b35dd69c.js" crossorigin="anonymous"></script>
+
+	<!-- add google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:400,900|
+	IBM+Plex+Mono:300,600,900|Yanone+Kaffeesatz:600&display=swap" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header id="home">
+		<div class="logo">
+			<p class="header__logo">[ Justin Lonh ]</p>
+		</div>
+		<button class="nav-toggle" aria-label="toggle navigation">
+			<span class="hamburger"></span>
+		</button>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+				<li class="nav__item"><a href="#topskills" class="nav__link">What I Can Do</a></li>
+				<li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+				<li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	
+	<section class="intro">
+		<h1 class="section__title section__title--intro">Welcome, I'm <strong>Justin Lonh</strong></h1>
+		<p class="section__subtitle section__subtitle--intro">SOFTWARE DEVELOPER</p>
+		<img src="img/devjustin.png" alt="picture of Justin Lonh smiling" class="intro__img">
+	</section>
+
+	<section class="top-skills" id="topskills">
+		<h2 class="section__title section__title--topskills">What I Can Do</h2>
+		<div class="services">
+			<div class="service">
+				<h3>Back-end Dev</h3>
+				<p>The backbone of my programming expertise gained from my time at UC Irvine. I know
+					many popular languages like Python, Java, and C++, as well as technology like 
+					databases and even machine learning. I've worked on lots of projects ranging 
+					from fun games to useful navigation applications! 
+				</p>
+			</div>
+
+			<div class="service">
+				<h3>Front-end Dev</h3>
+				<p>Front-end development? You're looking right at it! I coded this personal website
+					myself. Although my programming coursework focused more on the back-end kind of
+					implementations, I've delved into front-end on my own and have been finding it
+					quite fun. I'm excited to continue to add interesting content to my personal site!
+				</p>
+			</div>
+
+			<div class="service">
+				<h3>Machine Learning</h3>
+				<p>This is a personal interest of mine! I actually specialized in machine learning
+					and artificial intelligence while pursuing my Computer Science degree at UCI.
+					I've learned the basic machine learning concepts and tools, and I've previously
+					put my skills into practice in the domain of natural language processing (NLP).
+				</p>
+			</div>
+		</div>
+
+		<a href="#projects" class="btn">My Work</a>
+	</section>
+
+	<section class="about-me" id="about">
+		<h2 class="section__title section__title--about">About Me</h2>
+		<p class="section__subtitle section__subtitle--about">I'm very interesting</p>
+
+		<div class="about-me__body">
+			<p>I recently graduated from the University of California, Irvine in 2020 with a 
+				Bachelor's in Computer Science, specializing in machine learning (officially 
+				called "Intelligent Systems" in my major). I've learned a lot in the classroom, 
+				but I've also worked on projects at hackathons where I collaborated with my friends.
+			</p>
+			<p>In my free time, I love to dance! I was part of a dance team called Urban Motus, 
+				focusing on hip-hop and modern dance styles. I also served as a board member for 
+				another dance team called KKAP for two years, where I worked in a team of 10 student 
+				leaders to organize weekly dance workshops, dance practices, and social events for over 
+				100 members.
+			</p>
+		</div>
+
+		<img src="img/justin_flowers.png" alt="Justin next to an anteater statue" class="about-me__img">
+	</section>
+
+	<section class="my-projects" id="projects">
+		<h2 class="section__title section__title--projects">Projects</h2>
+		<p class="section__subtitle section__subtitle--projects">Various projects I have created</p>
+
+		<div class="portfolio">
+			<a href="./portfolio-item.html" class="portfolio__item">
+				<img src="img/devjustin.png" alt="" class="portfolio__img">
+			</a>
+
+			<a href="#" class="portfolio__item">
+				<img src="img/workspace.jpg" alt="" class="portfolio__img">
+			</a>
+
+			<a href="#" class="portfolio__item">
+				<img src="img/googlegamesjustin.jpg" alt="" class="portfolio__img">
+			</a>
+
+			<a href="#" class="portfolio__item">
+				<img src="img/lahacks.jpg" alt="" class="portfolio__img">
+			</a>
+
+			<a href="#" class="portfolio__item">
+				<img src="" alt="" class="portfolio__img">
+			</a>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<a href="mailto:JustinLonh.cs@gmail.com" class="footer__link">JustinLonh.cs@gmail.com</a>
+		<ul class="social-list">
+			<li class="social-list__item">
+				<a class="social-list__link" href="https://www.linkedin.com/in/justin-lonh/" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a class="social-list__link" href="https://github.com/JLONH56589" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a class="social-list__link" href="https://www.instagram.com/justiin800/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+	<script src="js/index.js"></script>
+
+</body>
+</html>
