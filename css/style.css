@@ -302,9 +302,6 @@ header {
 .intro__img {
     box-shadow: var(--bs);
     object-fit: cover;
-    /*width: 300;
-    height: 300px;
-    overflow: hidden;*/
 }
 
 /* top skills section */
