@@ -36,17 +36,64 @@
 	<section class="intro">
 		<h1 class="section__title section__title--intro">Presenting:<br><strong>InBetween</strong></h1>
 		<p class="section__subtitle section__subtitle--intro">LA Hacks 2018</p>
-		<img src="img/projects/inbetween.PNG" alt="" class="intro__img">
+		<img src="img/projects/inbetween.PNG" alt="screenshot of InBetween's user interface" class="intro__img">
 	</section>
 
 	<div class="portfolio-item-individual">
-		<p>Look at my project I made</p>
-		<img src="img/projects/lahacks.jpg" alt="">
-		<p>This project was very nice. We worked on it for many hours in order to complete our prototype
-			within the 36 hour time limit. Although it was very stressful and we were using new technology
-			for the first time, it was a very fun and rewarding experience.
+		<p><strong><a href="https://github.com/uci-mars/InBetween" target="_blank">GitHub Project Link</a></strong></p>
+		
+		<p><strong>Languages/Technologies Used:</strong> Python, Django, HTML, JavaScript, FourSquare API, 
+			Google Maps API, Google Cloud Platform
 		</p>
-		<p>I used Python and stuff.</p>
+
+		<p>This project was a collaborative effort in a team of 5 that included me, Shayla Luong, Irene Vu, Marawin
+			Cheang and Duy Vu at the LA Hacks 2018 hackathon. In under 36 hours, we created a prototype web application
+			that allows the user to input two locations and any keywords to find points of interest roughly halfway
+			between the two locations provided. The purpose of our web application was to aid in finding places to 
+			meet up for two people so that neither party would need to travel too far.
+		</p>
+		<img src="img/projects/lahacks.jpg" alt="four people standing around a computer">
+		<p>I personally worked on the researching and integration of the 
+			<a href="https://developers.google.com/maps/documentation/directions/overview" target="_blank">Google Maps 
+				Directions API</a> 
+			for route calculation and map display, and 
+			<a href="https://developer.foursquare.com/docs/places-api/" target="_blank">FourSquare's Places API</a> 
+			to search for recommended places. I also personally
+			managed the deployment of the web application using
+			<a href="https://cloud.google.com/appengine" target="_blank">Google Cloud Platform's App Engine</a>.
+		</p>
+		<p>For the Directions API, I set up the proper request for directions between the two locations provided by
+			the user to allow for calculation of the halfway point along the possible route between the two
+			locations. I realized that this approach would be more practical instead of simply calculating the
+			halfway point of the Euclidean distance between the two provided locations because there is not 
+			necessarily a perfectly straight route to the halfway point. Depending on the available freeways 
+			and roads, the Euclidean halfway point would not necessarily be the same as the halfway point of the
+			route taken, and as users would most likely be driving if using the application, taking the halfway point
+			of the route between the two locations made more sense, and was a very important consideration.
+		</p>
+		<p>For the FourSquare API, I similarly set up the proper request and response parsing for recommended places
+			once the application had finished finding the driving halfway point using Google Maps' Directions API. 
+			The application would then take the recommendations data provided and present them to the user, alongside
+			a map also provided by the Maps Embed API.
+		</p>
+		<p>The deployment of the application using GCP's App Engine was actually the most frustrating part of the
+			project. There ended up being a few specific configuration settings required
+			to specifically allow a Django application to work with App Engine, but I found that the information I needed
+			was quite spread out through different documentation pages, making it difficult to put everything together.
+			Also, when attempting to deploy our application, each attempt would take about 15 minutes or so before any 
+			sort of success or error message would appear at all, and there were many, many times where I would have to
+			wait 15 minutes before I would be told to fix one configuration setting. It also didn't
+			help that the deployment stage of our project was closer to the end of the 36 hour time limit for the 
+			hackathon. However, after much trial and error, I was able to successfully deploy our project into 
+			a functional website. 
+		</p>
+		<p>
+			I think the most valuable lesson I learned from this project was dealing with documentation to 
+			successfully implement the features needed for a project. Although documentation may sometimes be
+			incomplete for newer technologies like Google Cloud Platform, everything is still there, and 
+			being able to understand documentation and be persistent in researching what is needed for 
+			a specific project has helped me in all my subsequent projects ever since. 
+		</p>
 	</div>
 
 	<footer class="footer">
