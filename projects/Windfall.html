@@ -35,13 +35,18 @@
 	
 	<section class="intro">
 		<h1 class="section__title section__title--intro">Presenting:<br><strong>Windfall</strong></h1>
-		<p class="section__subtitle section__subtitle--intro">Colorado Lottery Game Jam 2020</p>
+		<p class="section__subtitle section__subtitle--intro">Colorado Lottery Game Jam</p>
 		<img src="../img/project_imgs/windfall.jpg" alt="screenshot of Windfall game" class="intro__img">
 	</section>
 
 	<div class="portfolio-item-individual">
-		<p><strong><a href="https://github.com/nluong1021/colorado-jam" target="_blank">
-			<i class="fab fa-github"></i> GitHub Project Link</a></strong>
+		<p><a href="https://github.com/nluong1021/colorado-jam" target="_blank">
+			<i class="fab fa-github"></i> <strong>GitHub Project Link</a></strong>
+		</p>
+
+		<p>
+			<a href="https://gamejolt.com/games/windfall/524913">
+				<i class="fas fa-gamepad"></i> <strong>GameJolt (Live Game Sample Available)</a></strong>
 		</p>
 
 		<p><strong>Languages/Technologies Used:</strong> C#, Unity
@@ -55,14 +60,29 @@
 			and are typically accompanied by paper slips for players to place bets.
 		</p>
 
-		<p>I used Python and stuff.</p>
+		<p>I personally worked on creating the Unity prefabs for the leaf and box objects, as well as writing
+			the C# scripts to properly control the behaviors of the leaves, boxes, lottery timer, and lottery 
+			draw generation in the background of the application. Writing the C# scripts also involved
+			using Unity's unique coding paradigms to allow different objects to communicate properly with 
+			the game controller object to coordinate the behavior of the lottery draws.
+		</p>
 		
 		<img src="../img/project_imgs/windfall_unity.jpg" alt="screenshot of Windfall in Unity">
-		<p>This project was very nice. We worked on it for many hours in order to complete our prototype
-			within the 36 hour time limit. Although it was very stressful and we were using new technology
-			for the first time, it was a very fun and rewarding experience.
+		<p>Although my coding partner Shayla and I had not been very familiar with Unity when we started
+			this project, we ended up having a lot of fun learning to use Unity and coding in C# to 
+			make our concept come to life. Given that the project was a game, there was a lot of room for 
+			creativity, and we greatly enjoyed taking advantage of unique Unity features such as particle 
+			systems to put our game together. 
 		</p>
-		<p>I used Python and stuff.</p>
+		<p>Shayla and I had previously worked on other projects where we created games, but this particular 
+			project presented a unique challenge because the Colorado Lottery Game Jam organizers requested 
+			monitor games, which must have no direct user input and instead depend on external betting slips 
+			to allow patrons to place bets on the outcome of whatever game we created. Also, the game would 
+			commence very frequently (for example, every 4 minutes), so creating a game that was engaging, 
+			interesting, but still completed fast enough for the required frequency was important. We met this 
+			requirement by first generating the final draw behind the scenes, then generating a list of leaves 
+			to be generated that would allow the game to finish in time.
+		</p>
 	</div>
 
 	<footer class="footer">
